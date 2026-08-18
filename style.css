@@ -117,8 +117,9 @@ h1, h2 {
 }
 
 .hero__title {
-  font-size: clamp(2.1rem, 5.2vw, 3.6rem);
-  line-height: 1.32;
+  font-size: clamp(1.85rem, 4.1vw, 3.05rem);
+  line-height: 1.42;
+  text-wrap: pretty;
   margin: 1.75rem 0 0;
 }
 
