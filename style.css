@@ -551,7 +551,8 @@ h1, h2 {
   .topbar { flex-direction: column; align-items: flex-start; gap: .6rem; }
   .topbar__nav { gap: .9rem; }
   .service { grid-template-columns: 1fr; gap: .4rem; }
-  .service::before { padding-top: 0; }
+  .service > * { grid-column: 1; }
+  .service::before { grid-column: 1; grid-row: 1; padding-top: 0; }
   .hero__actions { gap: 1rem; }
   .btn { flex: 1 1 auto; text-align: center; }
 }
