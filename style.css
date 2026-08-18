@@ -255,7 +255,12 @@ h1, h2 {
 
 .service:first-child { border-top: 0; padding-top: 0; }
 
+/* 序號固定在左欄第一列，其餘內容一律待在右欄。 */
+.service > * { grid-column: 2; }
+
 .service::before {
+  grid-column: 1;
+  grid-row: 1;
   counter-increment: svc;
   content: counter(svc, decimal-leading-zero);
   font-family: var(--mono);
