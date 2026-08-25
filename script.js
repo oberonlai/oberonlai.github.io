@@ -48,6 +48,14 @@
     io.observe(el);
   });
 
+  // 保險機制：若 IntersectionObserver 未觸發（例如頁面在背景分頁載入），
+  // 5 秒後一律顯示，避免內容永遠停在透明狀態.
+  window.setTimeout(function () {
+    Array.prototype.forEach.call(targets, function (el) {
+      el.classList.add('is-in');
+    });
+  }, 5000);
+
   // 導覽列目前章節標示.
   var sections = document.querySelectorAll('main section[id]');
   var links = {};
