@@ -183,14 +183,24 @@ li{list-style:none;}
 
 /* ── 客戶評價（保留位置） ───────────────────────────────── */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
-.quote{border:1px dashed var(--rule);padding:26px 24px;background:var(--paper);}
-.quote-slot{
-  display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;
-  color:var(--slate);border:1px solid var(--rule);padding:3px 10px;margin-bottom:22px;
+.quote{
+  display:flex;flex-direction:column;
+  border:1px solid var(--rule);border-top:2px solid var(--gold);
+  padding:24px;background:var(--paper);
 }
-.quote-line{display:block;height:1px;background:var(--rule);margin-bottom:16px;}
-.quote-line.short{width:62%;}
-.quote-by{display:block;margin-top:26px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#9AA2B1;}
+.quote-slot{
+  align-self:flex-start;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
+  color:#98A0AE;border:1px solid var(--rule);padding:2px 9px;margin-bottom:18px;
+}
+.quote blockquote{
+  margin:0;flex:1;font-size:15px;line-height:1.9;color:#2A3446;
+}
+.quote blockquote::before{content:"「";}
+.quote blockquote::after{content:"」";}
+.quote-by{
+  display:block;margin-top:22px;padding-top:14px;border-top:1px dashed var(--rule);
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--slate);
+}
 
 /* ── 常見問題 ───────────────────────────────── */
 .faq{margin-top:36px;border-top:1px solid var(--rule);}
