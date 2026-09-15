@@ -49,3 +49,6 @@ All Traditional Chinese copy and links preserved from live site (mailto, LINE `h
 - `out-v2/styles.css`
 - `out-v2/DESIGN.md`
 - `out-v2/assets/deco-*.svg` (+ keep site `assets/oberon-avatar.png` on deploy)
+
+## Layout fix (2026-09-15)
+Removed hero `min-height: ~78svh` + `justify-content: center` + stats `margin-top: auto` — those created a large empty band between hero content and stats. Hero now sizes to content; section rhythm tightened to `clamp(40px, 5vw, 64px)`.

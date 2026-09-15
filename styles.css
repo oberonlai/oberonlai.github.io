@@ -29,7 +29,7 @@
 
   --container: 1240px;
   --pad-inline: clamp(1rem, 3vw, 1.5rem);
-  --section-rhythm: clamp(48px, 6vw, 80px);
+  --section-rhythm: clamp(40px, 5vw, 64px);
   --header-h: 3rem;
   --gap: 14px;
   --radius: 2px;
@@ -196,15 +196,15 @@ a:focus-visible,
   background: var(--accent-soft);
 }
 
-/* Hero */
+/* Hero — height follows content (no svh min-height void) */
 .hero {
   position: relative;
   scroll-margin-top: calc(var(--header-h) + 0.5rem);
-  min-height: clamp(70svh, 78svh, 85svh);
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-block: clamp(1.25rem, 2.5vw, 2rem) 0;
+  justify-content: flex-start;
+  padding-block: clamp(1rem, 2vw, 1.5rem) 0;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
@@ -397,13 +397,13 @@ a:focus-visible,
   border-bottom-color: var(--accent);
 }
 
-/* Stats strip */
+/* Stats strip — tight under hero content, no flex grow gap */
 .stats-strip {
   position: relative;
   z-index: 1;
   border-top: 1px solid var(--line);
   background: var(--card);
-  margin-top: auto;
+  margin-top: 0;
 }
 
 .stats-strip__inner {
