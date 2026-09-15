@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>嗨，我是 Oberon｜自我介紹</title>
   <meta name="description" content="Oberon Lai／賴俊吾——WordPress + AI 技術合夥人。11 年 WP 實戰，透過 Codotx 陪你把想法穩穩交付上線。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
 
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="#hero">
-        Oberon Lai
-        <span class="brand__tag">自我介紹</span>
-      </a>
+    <div class="container site-header__inner">
+      <a class="brand" href="#hero">Oberon Lai</a>
       <nav aria-label="頁內錨點導覽">
-        <ul class="nav nav--anchors">
+        <ul class="nav">
           <li><a href="#how">做事</a></li>
           <li><a href="#now">現在</a></li>
           <li><a href="#services">服務</a></li>
@@ -30,104 +30,125 @@
   </header>
 
   <main id="main">
-    <!-- 1. Hero -->
-    <section id="hero" class="hero section-block" aria-labelledby="hero-title">
-      <div class="hero__inner">
-        <img
-          class="avatar-img"
-          src="assets/oberon-avatar.png"
-          width="128"
-          height="128"
-          alt="Oberon Lai 頭像"
-        >
-        <div class="hero__copy">
-          <h1 id="hero-title">嗨，我是 Oberon</h1>
-          <p class="hero__sub">賴俊吾／Oberon Lai</p>
+    <!-- Hero: Feature Stack above-the-fold -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <h1 id="hero-title" class="hero__title">嗨，我是 Oberon</h1>
+          <p class="hero__name">賴俊吾／Oberon Lai</p>
           <p class="hero__tagline">WordPress + AI 技術合夥人。11 年 WP 實戰，透過 Codotx（想點創意）陪你把想法穩穩交付上線。</p>
-          <p class="lead">我專注把複雜的客製需求拆成能交付的解法——從 WordPress、WooCommerce、LINE 整合，到把 AI 真正嵌進開發流程與產品。這裡是我的日常、作品與教學；若你需要長期技術夥伴，也可以透過 Codotx 找我（與團隊）。</p>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="mailto:hi@oberonlai.blog">寫信給我</a>
-            <a class="btn btn--secondary" href="#services">看服務精簡</a>
-            <a class="btn btn--ghost" href="#codotx">認識 Codotx</a>
-          </div>
+          <p class="hero__lead">我專注把複雜的客製需求拆成能交付的解法——從 WordPress、WooCommerce、LINE 整合，到把 AI 真正嵌進開發流程與產品。這裡是我的日常、作品與教學；若你需要長期技術夥伴，也可以透過 Codotx 找我（與團隊）。</p>
+          <img
+            class="hero__avatar"
+            src="assets/oberon-avatar.png"
+            width="96"
+            height="96"
+            alt="Oberon Lai 頭像"
+          >
         </div>
+        <aside class="hero__aside" aria-label="聯絡與連結">
+          <a class="btn btn--primary btn--block" href="mailto:hi@oberonlai.blog">來聊聊 · 寫信給我</a>
+          <dl class="hero__meta">
+            <div>
+              <dt>角色</dt>
+              <dd>技術合夥人</dd>
+            </div>
+            <div>
+              <dt>專長</dt>
+              <dd>WP · Woo · LINE · AI</dd>
+            </div>
+            <div>
+              <dt>公司</dt>
+              <dd><a href="https://codotx.com/" rel="noopener noreferrer">Codotx</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:hi@oberonlai.blog">hi@oberonlai.blog</a></dd>
+            </div>
+          </dl>
+          <ul class="hero__connect">
+            <li><a href="#services">看服務精簡</a></li>
+            <li><a href="#codotx">認識 Codotx</a></li>
+            <li><a href="https://lin.ee/fjrAhZg" rel="noopener noreferrer" target="_blank">LINE 諮詢</a></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- 2. 我怎麼做事 -->
-    <section id="how" class="section-block" aria-labelledby="how-title">
-      <div class="section-inner">
+    <!-- 我怎麼做事 -->
+    <section id="how" class="section" aria-labelledby="how-title">
+      <div class="container">
         <p class="section__label">信任點</p>
         <h2 id="how-title">我怎麼做事</h2>
-        <ul class="trust-list">
-          <li>
+        <ul class="trust-grid">
+          <li class="trust-card">
             <strong>技術夥伴，不是丟完就走的乙方</strong>
-            先理解商業與流程，再寫程式；從需求釐清到上線維運都能陪。
+            <p>先理解商業與流程，再寫程式；從需求釐清到上線維運都能陪。</p>
           </li>
-          <li>
+          <li class="trust-card">
             <strong>11 年 WordPress 實戰</strong>
-            主題、外掛、電商、金流、效能、資安——能進核心源碼解問題。
+            <p>主題、外掛、電商、金流、效能、資安——能進核心源碼解問題。</p>
           </li>
-          <li>
+          <li class="trust-card">
             <strong>AI 是工具，判斷力是我的工作</strong>
-            我會設計 AI 開發框架、幫團隊把 AI 寫得對，也補上 AI 看不見的盲點。
+            <p>我會設計 AI 開發框架、幫團隊把 AI 寫得對，也補上 AI 看不見的盲點。</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- 3. 現在在做什麼 -->
-    <section id="now" class="section-block section-block--alt" aria-labelledby="now-title">
-      <div class="section-inner section-inner--wide">
+    <!-- 現在在做什麼 -->
+    <section id="now" class="section section--alt" aria-labelledby="now-title">
+      <div class="container">
         <p class="section__label">Ongoing</p>
         <h2 id="now-title">現在在做什麼</h2>
-        <div class="two-col">
-          <div class="card-block">
+        <div class="split-grid">
+          <div class="panel">
             <h3>Product</h3>
             <ul class="item-list">
               <li>
                 <strong>Notivo</strong>
-                <span class="desc">訂單通知外掛大重構並拆出國際版，準備上架 CodeCanyon。</span>
+                <span>訂單通知外掛大重構並拆出國際版，準備上架 CodeCanyon。</span>
               </li>
               <li>
                 <strong>OrderChatz</strong>
-                <span class="desc">訂單聊天外掛完成全庫安全稽核，準備送審 CodeCanyon。</span>
+                <span>訂單聊天外掛完成全庫安全稽核，準備送審 CodeCanyon。</span>
               </li>
               <li>
                 <strong>MediaNest</strong>
-                <span class="desc">媒體庫外掛規劃上架 AppSumo；競品盤點與測試撰寫中。</span>
+                <span>媒體庫外掛規劃上架 AppSumo；競品盤點與測試撰寫中。</span>
               </li>
               <li>
                 <strong>Licento</strong>
-                <span class="desc">授權外掛——付費外掛序號授權、啟用數與自動更新機制。</span>
+                <span>授權外掛——付費外掛序號授權、啟用數與自動更新機制。</span>
               </li>
             </ul>
           </div>
-          <div class="card-block">
+          <div class="panel">
             <h3>Project（近期客製精選）</h3>
             <ul class="item-list">
               <li>
                 <strong>空間預約租借系統</strong>
-                <span class="desc">以 TDD 開發客製預約流程、通知信與前端介面。</span>
+                <span>以 TDD 開發客製預約流程、通知信與前端介面。</span>
               </li>
               <li>
                 <strong>藍新金流整合</strong>
-                <span class="desc">串接 ATM 虛擬帳號、超商代碼、WebATM 等付款。</span>
+                <span>串接 ATM 虛擬帳號、超商代碼、WebATM 等付款。</span>
               </li>
               <li>
                 <strong>動態退款與再次付款</strong>
-                <span class="desc">依目標日剩餘天數自動計算退款金額。</span>
+                <span>依目標日剩餘天數自動計算退款金額。</span>
               </li>
               <li>
                 <strong>Google 日曆同步</strong>
-                <span class="desc">預約系統雙向同步與國定假日偵測。</span>
+                <span>預約系統雙向同步與國定假日偵測。</span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="learning-box">
+        <div class="learning">
           <h3>最近在 K 的</h3>
-          <ul class="simple-list">
+          <ul>
             <li>AI 多 agent 自動化開發：用 Claude Code workflow 編排資安稽核與 code review。</li>
             <li>資安稽核方法論：練習對抗式驗證，逐條回溯程式碼過濾誤報。</li>
             <li>Beyond XSS：探索網頁前端資安宇宙——看完皮繃很緊 XD。</li>
@@ -136,22 +157,22 @@
       </div>
     </section>
 
-    <!-- 4. 服務精簡 -->
-    <section id="services" class="section-block" aria-labelledby="services-title">
-      <div class="section-inner">
+    <!-- 服務精簡 -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
         <p class="section__label">Services</p>
         <h2 id="services-title">服務精簡</h2>
         <p class="lead">從 WordPress、WooCommerce 到 LINE 整合——以超過十年的實戰經驗，協助你把想法穩穩交付上線。我習慣當技術合夥人：先把問題拆清楚，再一起做到能維護、能成長的版本。</p>
-        <div class="service-chips">
-          <article class="service-chip">
+        <div class="service-grid">
+          <article class="service-card">
             <h3>WordPress</h3>
             <p>佈景主題、外掛、效能、資安與長期維運——從需求分析到上線部署把關。</p>
           </article>
-          <article class="service-chip">
+          <article class="service-card">
             <h3>WooCommerce</h3>
             <p>台灣主流金流、結帳客製、訂單自動化——打造高效能電商營運系統。</p>
           </article>
-          <article class="service-chip">
+          <article class="service-card">
             <h3>LINE 整合</h3>
             <p>Login、Messaging API、官方帳號機器人與 CRM——把訂單變成可經營的關係。</p>
           </article>
@@ -167,38 +188,38 @@
       </div>
     </section>
 
-    <!-- 5. 教學與演講 -->
-    <section id="talks" class="section-block section-block--alt" aria-labelledby="talks-title">
-      <div class="section-inner">
+    <!-- 教學與演講 -->
+    <section id="talks" class="section section--alt" aria-labelledby="talks-title">
+      <div class="container">
         <p class="section__label">Teaching &amp; Talks</p>
         <h2 id="talks-title">教學與演講</h2>
-        <div class="two-col talks-grid">
-          <div class="card-block">
+        <div class="split-grid">
+          <div class="panel">
             <h3>WordPress 教學文（精選）</h3>
-            <ul class="simple-list">
+            <ul class="plain-list">
               <li>WooCommerce 結帳欄位客製大全</li>
               <li>WordPress 佈景主題 CSS 客製化</li>
               <li>主題購買後如何安裝成像展示的一樣？</li>
             </ul>
           </div>
-          <div class="card-block">
+          <div class="panel">
             <h3>公開演講（精選）</h3>
-            <ul class="talk-list">
+            <ul class="item-list">
               <li>
                 <strong>你會用 AI，但你會教 AI 嗎？</strong>
-                <span class="desc">用 Agent 與 Skill 打造你的 AI 工作團隊（彩虹小聚）</span>
+                <span>用 Agent 與 Skill 打造你的 AI 工作團隊（彩虹小聚）</span>
               </li>
               <li>
                 <strong>如何使用區塊主題打造原生編輯體驗</strong>
-                <span class="desc">利用 AI 開發 WordPress 區塊主題（新竹 WordPress 小聚）</span>
+                <span>利用 AI 開發 WordPress 區塊主題（新竹 WordPress 小聚）</span>
               </li>
               <li>
                 <strong>ChatGPT 不會教你的 WordPress 外掛開發術</strong>
-                <span class="desc">WordCamp Taiwan 2023</span>
+                <span>WordCamp Taiwan 2023</span>
               </li>
               <li>
                 <strong>用 AI 打造聊天機器人</strong>
-                <span class="desc">從找痛點到付費訂閱（Chatbot Taiwan Meetup）</span>
+                <span>從找痛點到付費訂閱（Chatbot Taiwan Meetup）</span>
               </li>
             </ul>
           </div>
@@ -206,9 +227,9 @@
       </div>
     </section>
 
-    <!-- 6. Codotx 橋接 -->
-    <section id="codotx" class="section-block" aria-labelledby="codotx-title">
-      <div class="section-inner">
+    <!-- Codotx -->
+    <section id="codotx" class="section" aria-labelledby="codotx-title">
+      <div class="container">
         <p class="section__label">Company</p>
         <h2 id="codotx-title">想點創意／Codotx</h2>
         <div class="bridge">
@@ -224,9 +245,9 @@
       </div>
     </section>
 
-    <!-- 7. 聯絡 -->
-    <section id="contact" class="section-block section-block--contact" aria-labelledby="contact-title">
-      <div class="section-inner">
+    <!-- 聯絡 -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+      <div class="container">
         <div class="contact-panel">
           <h2 id="contact-title">來聊聊</h2>
           <p>有案子、想討論技術方向，或只是想確認適不適合一起做——歡迎寫信。</p>
@@ -236,8 +257,8 @@
             <li>公司：想點創意科技有限公司／Codotx｜統編 90516823</li>
           </ul>
           <div class="btn-row">
-            <a class="btn btn--primary" href="mailto:hi@oberonlai.blog">寫信給我</a>
-            <a class="btn btn--secondary" href="https://lin.ee/fjrAhZg" rel="noopener noreferrer" target="_blank">LINE 諮詢</a>
+            <a class="btn btn--on-dark" href="mailto:hi@oberonlai.blog">寫信給我</a>
+            <a class="btn btn--outline-light" href="https://lin.ee/fjrAhZg" rel="noopener noreferrer" target="_blank">LINE 諮詢</a>
           </div>
         </div>
       </div>
@@ -245,7 +266,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner">
+    <div class="container site-footer__inner">
       <p>© Oberon Lai｜Oberon Lai 自我介紹</p>
       <p><a href="mailto:hi@oberonlai.blog">hi@oberonlai.blog</a> · <a href="https://codotx.com/" rel="noopener noreferrer">codotx.com</a></p>
     </div>
