@@ -7,7 +7,7 @@
   <meta name="description" content="Oberon Lai／賴俊吾——WordPress + AI 技術合夥人。11 年 WP 實戰，透過 Codotx 陪你把想法穩穩交付上線。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,24 +30,38 @@
   </header>
 
   <main id="main">
-    <!-- Hero: Feature Stack above-the-fold -->
+    <!-- Hero: compact dense split + stats strip -->
     <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero__texture" aria-hidden="true"></div>
       <div class="container hero__grid">
         <div class="hero__main">
+          <p class="eyebrow">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.118a7.5 7.5 0 0 1 15 0"/></svg>
+            自我介紹
+          </p>
           <h1 id="hero-title" class="hero__title">嗨，我是 Oberon</h1>
           <p class="hero__name">賴俊吾／Oberon Lai</p>
           <p class="hero__tagline">WordPress + AI 技術合夥人。11 年 WP 實戰，透過 Codotx（想點創意）陪你把想法穩穩交付上線。</p>
           <p class="hero__lead">我專注把複雜的客製需求拆成能交付的解法——從 WordPress、WooCommerce、LINE 整合，到把 AI 真正嵌進開發流程與產品。這裡是我的日常、作品與教學；若你需要長期技術夥伴，也可以透過 Codotx 找我（與團隊）。</p>
-          <img
-            class="hero__avatar"
-            src="assets/oberon-avatar.png"
-            width="96"
-            height="96"
-            alt="Oberon Lai 頭像"
-          >
+          <img class="hero__doodle" src="assets/deco-doodle.svg" width="160" height="40" alt="" aria-hidden="true">
         </div>
         <aside class="hero__aside" aria-label="聯絡與連結">
-          <a class="btn btn--primary btn--block" href="mailto:hi@oberonlai.blog">來聊聊 · 寫信給我</a>
+          <figure class="hero__photo">
+            <div class="hero__photo-frame">
+              <img
+                class="hero__avatar"
+                src="assets/oberon-avatar.png"
+                width="112"
+                height="112"
+                alt="Oberon Lai 頭像"
+              >
+            </div>
+            <figcaption class="hero__photo-cap">Fig. 1 — Oberon</figcaption>
+          </figure>
+          <a class="btn btn--primary btn--block" href="mailto:hi@oberonlai.blog">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+            來聊聊 · 寫信給我
+          </a>
           <dl class="hero__meta">
             <div>
               <dt>角色</dt>
@@ -67,29 +81,76 @@
             </div>
           </dl>
           <ul class="hero__connect">
-            <li><a href="#services">看服務精簡</a></li>
-            <li><a href="#codotx">認識 Codotx</a></li>
-            <li><a href="https://lin.ee/fjrAhZg" rel="noopener noreferrer" target="_blank">LINE 諮詢</a></li>
+            <li>
+              <a href="#services">
+                <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+                看服務精簡
+              </a>
+            </li>
+            <li>
+              <a href="#codotx">
+                <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-18v18M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12a2.25 2.25 0 0 1 2.25 2.25v15"/></svg>
+                認識 Codotx
+              </a>
+            </li>
+            <li>
+              <a href="https://lin.ee/fjrAhZg" rel="noopener noreferrer" target="_blank">
+                <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3.196-3.19c-.38-.38-.893-.593-1.425-.605-.38-.012-.76-.037-1.14-.075C10.847 16.994 10 16.03 10 14.894V10.608c0-.969.616-1.813 1.5-2.097"/></svg>
+                LINE 諮詢
+              </a>
+            </li>
           </ul>
         </aside>
+      </div>
+      <div class="stats-strip" aria-label="重點數字">
+        <div class="container stats-strip__inner">
+          <div class="stat">
+            <span class="stat__num">11</span>
+            <span class="stat__label">年 WordPress 實戰</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">×4</span>
+            <span class="stat__label">Product 外掛進行中</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">Talks</span>
+            <span class="stat__label">教學與公開演講</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">Codotx</span>
+            <span class="stat__label">技術合夥人載體</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- 我怎麼做事 -->
     <section id="how" class="section" aria-labelledby="how-title">
       <div class="container">
-        <p class="section__label">信任點</p>
+        <p class="section__label">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          信任點
+        </p>
         <h2 id="how-title">我怎麼做事</h2>
         <ul class="trust-grid">
           <li class="trust-card">
+            <span class="trust-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+            </span>
             <strong>技術夥伴，不是丟完就走的乙方</strong>
             <p>先理解商業與流程，再寫程式；從需求釐清到上線維運都能陪。</p>
           </li>
           <li class="trust-card">
+            <span class="trust-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+            </span>
             <strong>11 年 WordPress 實戰</strong>
             <p>主題、外掛、電商、金流、效能、資安——能進核心源碼解問題。</p>
           </li>
           <li class="trust-card">
+            <span class="trust-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
+            </span>
             <strong>AI 是工具，判斷力是我的工作</strong>
             <p>我會設計 AI 開發框架、幫團隊把 AI 寫得對，也補上 AI 看不見的盲點。</p>
           </li>
@@ -100,31 +161,34 @@
     <!-- 現在在做什麼 -->
     <section id="now" class="section section--alt" aria-labelledby="now-title">
       <div class="container">
-        <p class="section__label">Ongoing</p>
+        <p class="section__label">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+          Ongoing
+        </p>
         <h2 id="now-title">現在在做什麼</h2>
-        <div class="split-grid">
-          <div class="panel">
-            <h3>Product</h3>
-            <ul class="item-list">
-              <li>
+        <div class="bento">
+          <div class="bento__products">
+            <h3 class="bento__heading">Product</h3>
+            <ul class="product-grid">
+              <li class="product-card">
                 <strong>Notivo</strong>
                 <span>訂單通知外掛大重構並拆出國際版，準備上架 CodeCanyon。</span>
               </li>
-              <li>
+              <li class="product-card">
                 <strong>OrderChatz</strong>
                 <span>訂單聊天外掛完成全庫安全稽核，準備送審 CodeCanyon。</span>
               </li>
-              <li>
+              <li class="product-card">
                 <strong>MediaNest</strong>
                 <span>媒體庫外掛規劃上架 AppSumo；競品盤點與測試撰寫中。</span>
               </li>
-              <li>
+              <li class="product-card">
                 <strong>Licento</strong>
                 <span>授權外掛——付費外掛序號授權、啟用數與自動更新機制。</span>
               </li>
             </ul>
           </div>
-          <div class="panel">
+          <div class="bento__projects panel">
             <h3>Project（近期客製精選）</h3>
             <ul class="item-list">
               <li>
@@ -147,8 +211,11 @@
           </div>
         </div>
         <div class="learning">
-          <h3>最近在 K 的</h3>
-          <ul>
+          <h3>
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+            最近在 K 的
+          </h3>
+          <ul class="chip-list">
             <li>AI 多 agent 自動化開發：用 Claude Code workflow 編排資安稽核與 code review。</li>
             <li>資安稽核方法論：練習對抗式驗證，逐條回溯程式碼過濾誤報。</li>
             <li>Beyond XSS：探索網頁前端資安宇宙——看完皮繃很緊 XD。</li>
@@ -160,21 +227,40 @@
     <!-- 服務精簡 -->
     <section id="services" class="section" aria-labelledby="services-title">
       <div class="container">
-        <p class="section__label">Services</p>
+        <p class="section__label">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.60.98-1.368 1.208-2.233a4.508 4.508 0 0 0-.337-3.693 4.508 4.508 0 0 0-3.693-.337c-.865.228-1.633.658-2.233 1.208"/></svg>
+          Services
+        </p>
         <h2 id="services-title">服務精簡</h2>
         <p class="lead">從 WordPress、WooCommerce 到 LINE 整合——以超過十年的實戰經驗，協助你把想法穩穩交付上線。我習慣當技術合夥人：先把問題拆清楚，再一起做到能維護、能成長的版本。</p>
         <div class="service-grid">
           <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+            </span>
             <h3>WordPress</h3>
             <p>佈景主題、外掛、效能、資安與長期維運——從需求分析到上線部署把關。</p>
           </article>
           <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/></svg>
+            </span>
             <h3>WooCommerce</h3>
             <p>台灣主流金流、結帳客製、訂單自動化——打造高效能電商營運系統。</p>
           </article>
           <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+            </span>
             <h3>LINE 整合</h3>
             <p>Login、Messaging API、官方帳號機器人與 CRM——把訂單變成可經營的關係。</p>
+          </article>
+          <article class="service-card service-card--ai">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z"/></svg>
+            </span>
+            <h3>AI 顧問</h3>
+            <p>盤點 AI 開發流程、設計框架，並把 AI 客服／自動化嵌進 WP 與 LINE。</p>
           </article>
         </div>
         <div class="callout">
@@ -191,35 +277,42 @@
     <!-- 教學與演講 -->
     <section id="talks" class="section section--alt" aria-labelledby="talks-title">
       <div class="container">
-        <p class="section__label">Teaching &amp; Talks</p>
+        <p class="section__label">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"/></svg>
+          Teaching &amp; Talks
+        </p>
         <h2 id="talks-title">教學與演講</h2>
-        <div class="split-grid">
-          <div class="panel">
+        <div class="talks-grid">
+          <div class="panel panel--dense">
             <h3>WordPress 教學文（精選）</h3>
-            <ul class="plain-list">
-              <li>WooCommerce 結帳欄位客製大全</li>
-              <li>WordPress 佈景主題 CSS 客製化</li>
-              <li>主題購買後如何安裝成像展示的一樣？</li>
+            <ul class="dense-list">
+              <li><span class="dense-list__meta">Guide</span><span>WooCommerce 結帳欄位客製大全</span></li>
+              <li><span class="dense-list__meta">CSS</span><span>WordPress 佈景主題 CSS 客製化</span></li>
+              <li><span class="dense-list__meta">Theme</span><span>主題購買後如何安裝成像展示的一樣？</span></li>
             </ul>
           </div>
-          <div class="panel">
+          <div class="panel panel--dense">
             <h3>公開演講（精選）</h3>
-            <ul class="item-list">
+            <ul class="dense-list">
               <li>
+                <span class="dense-list__meta">彩虹小聚</span>
                 <strong>你會用 AI，但你會教 AI 嗎？</strong>
-                <span>用 Agent 與 Skill 打造你的 AI 工作團隊（彩虹小聚）</span>
+                <em>用 Agent 與 Skill 打造你的 AI 工作團隊</em>
               </li>
               <li>
+                <span class="dense-list__meta">新竹 WP</span>
                 <strong>如何使用區塊主題打造原生編輯體驗</strong>
-                <span>利用 AI 開發 WordPress 區塊主題（新竹 WordPress 小聚）</span>
+                <em>利用 AI 開發 WordPress 區塊主題</em>
               </li>
               <li>
+                <span class="dense-list__meta">WCTW 2023</span>
                 <strong>ChatGPT 不會教你的 WordPress 外掛開發術</strong>
-                <span>WordCamp Taiwan 2023</span>
+                <em>WordCamp Taiwan 2023</em>
               </li>
               <li>
+                <span class="dense-list__meta">Chatbot TW</span>
                 <strong>用 AI 打造聊天機器人</strong>
-                <span>從找痛點到付費訂閱（Chatbot Taiwan Meetup）</span>
+                <em>從找痛點到付費訂閱</em>
               </li>
             </ul>
           </div>
@@ -230,17 +323,24 @@
     <!-- Codotx -->
     <section id="codotx" class="section" aria-labelledby="codotx-title">
       <div class="container">
-        <p class="section__label">Company</p>
+        <p class="section__label">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-18v18M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12a2.25 2.25 0 0 1 2.25 2.25v15"/></svg>
+          Company
+        </p>
         <h2 id="codotx-title">想點創意／Codotx</h2>
         <div class="bridge">
-          <p>我創辦了想點創意科技（Codotx），統編 <strong>90516823</strong>。公司是服務與團隊的載體；這個頁面仍是我個人的第一人稱空間——寫日常、作品與教學。</p>
-          <p>團隊一句：Codotx 由深耕 WordPress 生態的技術專家組成（Oberon、Miffy、Woody），以「技術合夥人」精神陪伴客戶從想法到落地。</p>
-          <p>若你需要完整的 AI 開發顧問、WordPress／WooCommerce／LINE／AI 整合實作，歡迎到公司站看看。</p>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="https://codotx.com/" rel="noopener noreferrer">前往 Codotx</a>
-            <a class="btn btn--ghost" href="https://codotx.com/about/" rel="noopener noreferrer">關於我們</a>
-            <a class="btn btn--ghost" href="https://codotx.com/services/" rel="noopener noreferrer">服務項目</a>
+          <img class="bridge__deco" src="assets/deco-grid-mark.svg" width="56" height="56" alt="" aria-hidden="true">
+          <div class="bridge__body">
+            <p>我創辦了想點創意科技（Codotx），統編 <strong>90516823</strong>。公司是服務與團隊的載體；這個頁面仍是我個人的第一人稱空間——寫日常、作品與教學。</p>
+            <p>團隊一句：Codotx 由深耕 WordPress 生態的技術專家組成（Oberon、Miffy、Woody），以「技術合夥人」精神陪伴客戶從想法到落地。</p>
+            <p>若你需要完整的 AI 開發顧問、WordPress／WooCommerce／LINE／AI 整合實作，歡迎到公司站看看。</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://codotx.com/" rel="noopener noreferrer">前往 Codotx</a>
+              <a class="btn btn--ghost" href="https://codotx.com/about/" rel="noopener noreferrer">關於我們</a>
+              <a class="btn btn--ghost" href="https://codotx.com/services/" rel="noopener noreferrer">服務項目</a>
+            </div>
           </div>
+          <img class="bridge__blob" src="assets/deco-blob.svg" width="120" height="80" alt="" aria-hidden="true">
         </div>
       </div>
     </section>
@@ -252,9 +352,18 @@
           <h2 id="contact-title">來聊聊</h2>
           <p>有案子、想討論技術方向，或只是想確認適不適合一起做——歡迎寫信。</p>
           <ul class="contact-meta">
-            <li>Email：<a href="mailto:hi@oberonlai.blog">hi@oberonlai.blog</a></li>
-            <li>營業時間：週一至週五 09:00–18:00（週末與國定假日休息）</li>
-            <li>公司：想點創意科技有限公司／Codotx｜統編 90516823</li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+              Email：<a href="mailto:hi@oberonlai.blog">hi@oberonlai.blog</a>
+            </li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+              營業時間：週一至週五 09:00–18:00（週末與國定假日休息）
+            </li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-18v18M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12a2.25 2.25 0 0 1 2.25 2.25v15"/></svg>
+              公司：想點創意科技有限公司／Codotx｜統編 90516823
+            </li>
           </ul>
           <div class="btn-row">
             <a class="btn btn--on-dark" href="mailto:hi@oberonlai.blog">寫信給我</a>
