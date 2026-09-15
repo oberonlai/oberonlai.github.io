@@ -1,4 +1,4 @@
-/* Oberon personal card — mirror Codotx /portal/ (max-width 480px) */
+/* Oberon personal card — portal logic + two-col intro */
 :root {
   --c-primary: #222828;
   --c-accent: #ffdc73;
@@ -52,60 +52,57 @@ img {
   background: var(--c-bg-secondary);
 }
 
-.poto-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  padding: var(--sp-lg) var(--sp-lg) 0;
+.poto-content {
+  flex: 1;
+  padding: var(--sp-lg);
 }
 
-.poto-title {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1;
-  text-align: center;
-  color: var(--c-text);
+/* Two-column: headshot | name + intro */
+.poto-intro {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: var(--sp-md);
+  align-items: start;
+  margin-bottom: var(--sp-xl);
 }
 
-.poto-banner {
-  width: 100%;
+.poto-intro__photo {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 16 / 10;
   background: var(--c-primary);
+  aspect-ratio: 1;
+  box-shadow: var(--shadow-sm);
 }
 
-.poto-banner img {
+.poto-intro__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center top;
 }
 
-.poto-content {
-  flex: 1;
-  padding: var(--sp-xl) var(--sp-lg);
+.poto-intro__copy {
+  min-width: 0;
 }
 
 .poto-kicker {
   margin: 0 0 var(--sp-sm);
-  text-align: center;
+  text-align: left;
   font-size: var(--fs-sm);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--c-text);
+  line-height: 1.35;
 }
 
 .poto-description {
-  margin: 0 0 var(--sp-xl);
+  margin: 0;
   color: var(--c-text-sub);
   font-size: var(--fs-sm);
   line-height: var(--lh-relaxed);
-  text-align: center;
+  text-align: left;
 }
 
+/* Links stay single column */
 .poto-links {
   display: flex;
   flex-direction: column;
@@ -171,6 +168,13 @@ img {
   margin: 0;
   color: var(--c-text-light);
   font-size: var(--fs-xs);
+}
+
+@media (max-width: 360px) {
+  .poto-intro {
+    grid-template-columns: 96px 1fr;
+    gap: var(--sp-sm);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
